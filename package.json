@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vue-tsc --noEmit --skipLibCheck && vite build",
-        "build:stage": "vue-tsc --noEmit --skipLibCheck && vite build --mode stage",
+        "build:stage": "vue-tsc --noEmit --skipLibCheck && NODE_ENV=production vite build --mode stage",
         "serve": "vite preview"
     },
     "dependencies": {
