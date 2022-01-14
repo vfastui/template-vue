@@ -11,7 +11,7 @@
                         :style="{ lineHeight: '42px' }"
                     >
                         <a-menu-item v-for="menuItem in menuOptions" :key="menuItem.key">
-                            <router-link :to="menuItem.key">{{ menuItem.label }}</router-link>
+                            <router-link :to="menuItem.key">{{ menuItem.label~ }}</router-link>
                         </a-menu-item>
                     </a-menu>
                 </div>
