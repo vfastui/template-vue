@@ -22,7 +22,6 @@
                 </div>
             </a-layout-content>
             <a-layout-footer :style="{ textAlign: 'center' }"> xx @2021 xxx.com </a-layout-footer>
-<!--            <a-modal></a-modal>-->
         </a-layout>
     </a-config-provider>
 </template>
@@ -87,7 +86,6 @@ body,
     width: 120px;
     height: 24px;
     line-height: 24px;
-    /*background: rgba(255, 255, 255, 0.2);*/
     margin: 8px 24px 8px 0;
     font-weight: bold;
     color: #fff;
@@ -96,21 +94,6 @@ body,
     float: left;
 }
 
-/*.logo {*/
-/*    color: #fff;*/
-/*    font-weight: bold;*/
-/*    margin-right: 0;*/
-/*    font-size: 15px;*/
-/*    padding-left: 20px;*/
-/*}*/
-.ant-layout-header {
-    /*max-width: 1200px;*/
-}
-/*.ant-layout-header,*/
-/*.ant-menu {*/
-/*    layout-header-background: #292961;*/
-/*    height: 40px;*/
-/*}*/
 .ant-layout-footer {
     background: #fff;
 }
