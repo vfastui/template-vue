@@ -1,8 +1,8 @@
 {
-    "name": "{{name}}",
+    "name": "<%= name %>",
     "version": "1.0.0",
-    "description": "{{description}}",
-    "author": "{{author}}",
+    "description": "<%= description %>",
+    "author": "<%= author %>",
     "scripts": {
         "dev": "vite",
         "build": "vue-tsc --noEmit --skipLibCheck && vite build",

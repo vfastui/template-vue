@@ -3,7 +3,7 @@
         <a-layout>
             <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%' }">
                 <div class="content">
-                    <div class="logo">{{name}}</div>
+                    <div class="logo"><%= name %></div>
                     <a-menu
                         v-model:selectedKeys="selectedKeys"
                         theme="dark"
@@ -11,7 +11,7 @@
                         :style="{ lineHeight: '42px' }"
                     >
                         <a-menu-item v-for="menuItem in menuOptions" :key="menuItem.key">
-                            <router-link :to="menuItem.key">{{ menuItem.label~ }}</router-link>
+                            <router-link :to="menuItem.key">{{ menuItem.label }}</router-link>
                         </a-menu-item>
                     </a-menu>
                 </div>

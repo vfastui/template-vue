@@ -1,6 +1,6 @@
 <template>
     <Title>Hello</Title>
-    {{name}}
+    <%= name %>
 </template>
 
 <script>
