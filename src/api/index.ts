@@ -31,4 +31,4 @@ Axios.interceptors.response.use(
 )
 
 //获取项目version
-export const getVersion = () => Axios.post(`${import.meta.env.VITE_PUBLIC_PATH}version.json?v=${Math.random()}`)
+export const getVersion = () => Axios.get(`${import.meta.env.VITE_PUBLIC_PATH}version.json?v=${Math.random()}`)
