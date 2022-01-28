@@ -1,5 +1,6 @@
 <template>
     <a-config-provider :locale="zhCN" class="h100">
+        <a-modal></a-modal>
         <a-layout>
             <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%' }">
                 <div class="content">
@@ -40,7 +41,6 @@ const menuOptions = [
 ]
 export default defineComponent({
     setup() {
-        getVersion()
         const router = useRouter()
         let showModal = ref(false)
         let flag = true
@@ -53,7 +53,7 @@ export default defineComponent({
                         Modal.warning({
                             title: '版本更新',
                             centered: true,
-                            content: '有最新版本,请更新!',
+                            content: '有新版本,请更新!',
                             onOk: () => {
                                 window.location.reload()
                             }
